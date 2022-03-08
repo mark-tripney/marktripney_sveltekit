@@ -8,9 +8,9 @@
 				/></a
 			>
 		</li>
-		<li><a class="layout-link" href="/#work">Work</a></li>
-		<li><a class="layout-link" href="/writing">Writing</a></li>
-		<li><a class="layout-link" href="/#contact">Contact</a></li>
+		<li><a class="main-nav-link" href="/#work">Work</a></li>
+		<li><a class="main-nav-link" href="/writing">Writing</a></li>
+		<li><a class="main-nav-link" href="/#contact">Contact</a></li>
 	</ul>
 </nav>
 
@@ -40,6 +40,20 @@
 		ul li:nth-child(n + 2):nth-child(-n + 3) {
 			margin-right: 16px;
 		}
+	}
+
+	.main-nav-link {
+		margin-bottom: 3rem;
+		font-size: 1rem;
+		font-weight: 700;
+		color: #5f5260;
+		text-decoration: none;
+		padding: 0 0 2px;
+		border-bottom: 3px solid transparent;
+	}
+
+	.main-nav-link:hover {
+		border-bottom: 3px solid #5f5260;
 	}
 
 	img {
