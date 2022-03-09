@@ -154,9 +154,9 @@ END: Typography
 START: Sections
 **************************************************/
 
-section {
+/* section {
 	padding: 3rem 0;
-}
+} */
 
 /**************************************************
 END: Sections
@@ -164,5 +164,6 @@ END: Sections
 
 .content-wrapper {
 	width: 90%;
+	max-width: 900px;
 	margin: 0 auto;
 }

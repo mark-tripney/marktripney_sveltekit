@@ -1,3 +1,7 @@
+<script>
+	import Contact from '../components/Contact.svelte';
+</script>
+
 <section id="intro" class="dotted-bg">
 	<div class="content-wrapper">
 		<h1>Hello! I'm Mark, and I design and build for the web.</h1>
@@ -23,10 +27,23 @@
 <section id="contact" class="dotted-bg">
 	<div class="content-wrapper">
 		<h2>Contact</h2>
+		<Contact />
 	</div>
 </section>
 
 <style>
+	#intro {
+		padding: 3rem 0;
+	}
+
+	#work {
+		padding: 1rem 0 1.5rem;
+	}
+
+	#contact {
+		padding: 3rem 0;
+	}
+
 	.wave {
 		animation-name: wave-animation;
 		animation-duration: 2.5s;
