@@ -3,10 +3,7 @@
 	const submitForm = async (data) => {
 		submitStatus = 'submitting';
 		const formData = new FormData(data.currentTarget);
-		console.log(formData.get('name'));
-		console.log(formData.get('email'));
-		console.log(formData.get('message'));
-		const response = await fetch('contact.json', {
+		const response = await fetch('/api/contact.json', {
 			method: 'POST',
 			body: formData
 		});
