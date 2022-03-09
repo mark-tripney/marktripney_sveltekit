@@ -1,5 +1,5 @@
 <script>
-	import Contact from '../components/Contact.svelte';
+	import Contact from '$lib/components/Contact.svelte';
 </script>
 
 <section id="intro" class="dotted-bg">
@@ -33,7 +33,7 @@
 
 <style>
 	#intro {
-		padding: 3rem 0;
+		padding: 3rem 0 3.5rem;
 	}
 
 	#work {
@@ -41,7 +41,7 @@
 	}
 
 	#contact {
-		padding: 3rem 0;
+		padding: 3rem 0 4rem;
 	}
 
 	.wave {

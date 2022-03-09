@@ -9,7 +9,7 @@
 			>
 		</li>
 		<li><a class="main-nav-link" href="/#work">Work</a></li>
-		<li><a class="main-nav-link" href="/writing">Writing</a></li>
+		<li><a class="main-nav-link" href="/blog">Writing</a></li>
 		<li><a class="main-nav-link" href="/#contact">Contact</a></li>
 	</ul>
 </nav>
