@@ -4,7 +4,10 @@
 
 <section id="intro" class="dotted-bg">
 	<div class="content-wrapper">
-		<h1>Hello! I'm Mark, and I design and build for the web.</h1>
+		<hr />
+		<h1 class="main-head">Hi, I'm Mark.</h1>
+		<h2 class="main-sub-head">I'm a front-end developer, designer, and writer.</h2>
+		<div class="square" />
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam autem beatae est iure
 			laborum magni nobis reiciendis temporibus. Aliquam at ea excepturi hic illo laudantium
@@ -44,6 +47,32 @@
 		padding: 3rem 0 4rem;
 	}
 
+	hr {
+		width: 100px;
+		margin: 0 0 3rem 0;
+		height: 10px;
+		background-color: coral;
+		border: none;
+	}
+
+	.square {
+		height: 3rem;
+		width: 3rem;
+		background-color: #f5df4d;
+		margin-left: auto;
+		margin-bottom: 2rem;
+	}
+
+	.main-head {
+		margin-bottom: 1rem;
+	}
+
+	.main-sub-head {
+		font-weight: 400;
+		line-height: 1.2;
+		margin-bottom: 1rem;
+	}
+
 	.wave {
 		animation-name: wave-animation;
 		animation-duration: 2.5s;
@@ -81,5 +110,9 @@
 
 	#work {
 		background-color: #e5e5f1;
+	}
+
+	#contact h2 {
+		margin-bottom: 0.5rem;
 	}
 </style>

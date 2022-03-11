@@ -66,7 +66,7 @@
 	textarea {
 		background-color: #f3f4f6;
 		border: 1px solid #5f5260;
-		border-radius: 8px;
+		border-radius: 4px;
 		width: 100%;
 		padding: 0.5rem 0.75rem;
 		font-family: 'Open Sans', sans-serif;
