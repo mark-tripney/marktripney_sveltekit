@@ -17,6 +17,7 @@
 <style>
 	nav {
 		padding: 1rem 0;
+		background-color: #fff;
 	}
 
 	ul {

@@ -17,7 +17,7 @@
 </script>
 
 <div class="content-wrapper">
-	<hr />
+	<hr class="upper-hr" />
 	<h1>Writing</h1>
 	<div class="circle-group">
 		<div class="circle" />
@@ -38,12 +38,8 @@
 </div>
 
 <style>
-	hr {
-		width: 100px;
-		margin: 3rem 0 3rem 0;
-		height: 10px;
+	.upper-hr {
 		background-color: skyblue;
-		border: none;
 	}
 
 	.circle-group {

@@ -6,8 +6,9 @@
 </script>
 
 <div class="content-wrapper">
+	<hr class="upper-hr" />
 	<h1 class="post-title">{title}</h1>
-	<p>Published: {formatDate(date)}</p>
+	<p class="published-date">Published on {formatDate(date)}.</p>
 	<slot />
 	{#if categories.length}
 		<aside>
@@ -26,7 +27,18 @@
 </div>
 
 <style>
+	.upper-hr {
+		background-color: darkseagreen;
+	}
+
 	.post-title {
 		margin-top: 3rem;
+		margin-left: -3px;
+	}
+
+	.published-date {
+		margin: 0;
+		color: darkslategrey;
+		font-size: 0.9rem;
 	}
 </style>

@@ -18,9 +18,10 @@
 
 <style>
 	footer {
-		padding: 1rem 0;
-		background-color: #424077;
+		padding: 2rem 0;
+		background-color: #40637c;
 		font-size: 0.9rem;
+		clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
 	}
 	/* Workaround for iOS < 14.1 not supporting flexbox gap property
 	(gap IS supported for grid, so can't be used as check; translate also not
@@ -41,6 +42,12 @@
 	p {
 		color: #fff;
 		margin-right: auto;
+		font-size: 0.9rem;
+	}
+	@media screen and (min-width: 810px) {
+		p {
+			font-size: 1rem;
+		}
 	}
 
 	.twitter-logo {

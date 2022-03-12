@@ -1,14 +1,13 @@
 /**************************************************
 START: Andy Bell's 'Modern CSS Reset'
 **************************************************/
-
+/* #region */
 /* Box sizing rules */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-
 /* Remove default margin */
 body,
 h1,
@@ -74,9 +73,9 @@ select {
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
-  }
+	}
 }
-
+/* #endregion */
 /**************************************************
 END: Andy Bell's 'Modern CSS Reset'
 **************************************************/
@@ -84,6 +83,10 @@ END: Andy Bell's 'Modern CSS Reset'
 /**************************************************
 START: Global
 **************************************************/
+
+body {
+  background-color: #fcfcfc;
+}
 
 .dotted-bg {
 	background-image: radial-gradient(rgba(0, 0, 0, 0.2) 1px, transparent 1px);
@@ -96,6 +99,12 @@ START: Global
 	margin: 0 auto;
 }
 
+.upper-hr {
+  width: 100px;
+  margin: 6rem 0 3rem 0;
+  height: 10px;
+  border: none;
+}
 /**************************************************
 END: Global
 **************************************************/
@@ -121,14 +130,6 @@ h3 {
 	color: #3f3f3f;
 }
 
-h1 {
-  font-weight: 700;
-}
-
-h2, h3 {
-  font-weight: 600;
-}
-
 /*************************
 Sizing, line-height
 *************************/
@@ -137,12 +138,7 @@ h1 {
 	font-size: 3rem;
 	line-height: 1.1;
 }
-@media (min-width: 810px) {
-  h1 {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 1000px) {
+@media screen and (min-width: 810px) {
   h1 {
     font-size: 5rem;
   }
