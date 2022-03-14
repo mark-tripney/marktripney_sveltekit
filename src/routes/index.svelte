@@ -25,14 +25,20 @@
 	<div class="diagonal-div">
 		<div class="content-wrapper diagonal-wrapper">
 			<h2>Work</h2>
-			<p>These are some examples of recent work.</p>
+			<p class="work-intro">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aut corporis dignissimos
+				eligendi inventore magnam molestiae natus quas quidem reiciendis?
+			</p>
 			<div class="grid-container">
 				<!-- devsearch -->
 				<Card
 					src="/images/devfinder-dark-mix-crop.png"
 					alt="Screenshot from 'devfinder' app, showing light and dark mode side-by-side."
 					title="devfinder"
-					text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem commodi odit perferendis error obcaecati officia molestias ex illo neque?"
+					text="Search for developers on GitHub and view basic information from
+            their profile — bio, follower counts, number of repos, and so
+            on. Can't think of anyone? Never mind. You can always keep track of
+            Octocat instead."
 					link="https://github-user-search-peach.vercel.app/"
 				/>
 				<!-- Password Generator -->
@@ -40,7 +46,9 @@
 					src="/images/password-generator-crop.png"
 					alt="Screenshot from 'Password Generator' app."
 					title="Password Generator"
-					text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem commodi odit perferendis error obcaecati officia molestias ex illo neque?"
+					text="Generate passwords up to 64 characters in length using a
+            configurable combination of upper- and lower-case letters, numbers,
+            and symbols. Happy with the result? Copy it to your clipboard with one click!"
 					link="https://password-generator-eta-two.vercel.app/"
 				/>
 				<!-- todos -->
@@ -77,11 +85,11 @@
 	}
 
 	#work {
-		padding: 1rem 0 1.5rem;
+		padding: 0rem 0 1.5rem;
 	}
 
 	#contact {
-		padding: 3rem 0 4rem;
+		padding: 3rem 0 5rem;
 	}
 
 	.upper-hr {
@@ -141,19 +149,22 @@
 		}
 	}
 
-	/*#work h2,*/
-	/*#work p {*/
-	/*	color: #fff;*/
-	/*}*/
-
 	.diagonal-div {
-		background: linear-gradient(45deg, rgba(245, 223, 77, 1) 0%, rgba(252, 252, 252, 1) 100%);
+		background: linear-gradient(0deg, rgba(245, 223, 77, 1) 0%, rgba(252, 252, 252, 1) 100%);
 		transform: skewY(-2deg);
-		padding: 4rem 0;
+		padding: 0 0 4rem;
 	}
 
 	.diagonal-wrapper {
 		transform: skewY(2deg);
+	}
+
+	h2 {
+		margin-bottom: 1rem;
+	}
+
+	.work-intro {
+		margin-bottom: 3rem;
 	}
 
 	@media (min-width: 1000px) {
@@ -163,9 +174,5 @@
 			gap: 2rem;
 			padding-bottom: 2rem;
 		}
-	}
-
-	#contact h2 {
-		margin-bottom: 0.5rem;
 	}
 </style>
