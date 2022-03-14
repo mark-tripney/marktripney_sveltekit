@@ -21,7 +21,6 @@
 		padding: 2rem 0;
 		background-color: #40637c;
 		font-size: 0.9rem;
-		clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
 	}
 	/* Workaround for iOS < 14.1 not supporting flexbox gap property
 	(gap IS supported for grid, so can't be used as check; translate also not
