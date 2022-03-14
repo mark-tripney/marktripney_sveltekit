@@ -2,28 +2,14 @@
 	import { formatDate } from '$lib/utility_funcs/date-formatter';
 	export let title;
 	export let date;
-	export let categories;
 </script>
 
 <div class="content-wrapper">
 	<hr class="upper-hr" />
 	<h1 class="post-title">{title}</h1>
-	<p class="published-date">Published on {formatDate(date)}.</p>
+	<p class="published-date">{formatDate(date)}.</p>
 	<slot />
-	{#if categories.length}
-		<aside>
-			<h2>Posted in:</h2>
-			<ul>
-				{#each categories as category}
-					<li>
-						<a href="/blog/categories/{category}">
-							{category}
-						</a>
-					</li>
-				{/each}
-			</ul>
-		</aside>
-	{/if}
+	<p class="writing-link">&larr; <a href="/writing" class="non-body-link">Writing</a><br /></p>
 </div>
 
 <style>
@@ -40,5 +26,9 @@
 		margin: 0;
 		color: darkslategrey;
 		font-size: 0.9rem;
+	}
+
+	.writing-link {
+		margin: 3rem 0;
 	}
 </style>
