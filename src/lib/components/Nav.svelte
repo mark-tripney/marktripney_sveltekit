@@ -53,8 +53,10 @@
 		border-bottom: 3px solid transparent;
 	}
 
-	.main-nav-link:hover {
-		border-bottom: 3px solid #5f5260;
+	@media (hover: hover) and (pointer: fine) {
+		.main-nav-link:hover {
+			border-bottom: 3px solid #5f5260;
+		}
 	}
 
 	img {
@@ -68,8 +70,7 @@
 		ul {
 			gap: 1.5rem;
 		}
-
-		a {
+		.main-nav-link {
 			font-size: 1.1rem;
 		}
 	}

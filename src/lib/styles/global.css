@@ -81,11 +81,39 @@ END: Andy Bell's 'Modern CSS Reset'
 **************************************************/
 
 /**************************************************
+START: Variables
+**************************************************/
+
+:root {
+	--font-heading: 'Montserrat', sans-serif;
+	--font-body: 'Open Sans', sans-serif;
+
+	--clr-body-text: #272727;
+	--clr-heading: #3f3f3f;
+	--clr-link: #5f5260;
+	--clr-yellow: #f5df4d;
+	--clr-main-bg: #fcfcfc;
+
+	--size-body-sml: 1.1rem;
+	--size-body-med: 1.2rem;
+	--size-h1-sml: 3rem;
+	--size-h1-med: 3.5rem;
+	--size-h1-lrg: 5rem;
+	--size-h2-sml: 2.5rem;
+	--size-h2-med: 3rem;
+
+	--weight-link: 600;
+}
+/**************************************************
+END: Variables
+**************************************************/
+
+/**************************************************
 START: Global
 **************************************************/
 
 body {
-  background-color: #fcfcfc;
+	background-color: var(--clr-main-bg);
 }
 
 .dotted-bg {
@@ -100,11 +128,12 @@ body {
 }
 
 .upper-hr {
-  width: 100px;
-  margin: 6rem 0 3rem 0;
-  height: 10px;
-  border: none;
+	width: 100px;
+	margin: 6rem 0 3rem 0;
+	height: 10px;
+	border: none;
 }
+
 /**************************************************
 END: Global
 **************************************************/
@@ -114,51 +143,87 @@ START: Typography
 **************************************************/
 
 /*************************
+Links outside body text
+*************************/
+
+.non-body-link {
+	color: var(--clr-link);
+	font-weight: var(--weight-link);
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+}
+
+.non-body-link:visited {
+	color: var(--clr-link);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.non-body-link:hover {
+		border-bottom: 3px solid var(--clr-link);
+	}
+}
+
+/*************************
 Font families, colour
 *************************/
 
 p,
-li {
-	font-family: 'Open Sans', sans-serif;
-	color: #272727;
+li,
+a {
+	font-family: var(--font-body);
+	color: var(--clr-body-text);
 }
 
 h1,
 h2,
 h3 {
-	font-family: 'Montserrat', sans-serif;
-	color: #3f3f3f;
+	font-family: var(--font-heading);
+	color: var(--clr-heading);
 }
 
 /*************************
 Sizing, line-height
 *************************/
 
+p {
+	font-size: var(--size-body-sml);
+}
+
 h1 {
-	font-size: 3rem;
+	font-size: var(--size-h1-sml);
 	line-height: 1.1;
 }
-@media screen and (min-width: 810px) {
-  h1 {
-    font-size: 5rem;
-  }
+@media (min-width: 414px) {
+	h1 {
+		font-size: var(--size-h1-med);
+	}
+}
+@media (min-width: 810px) {
+	h1 {
+		font-size: var(--size-h1-lrg);
+	}
+	p {
+		font-size: var(--size-body-med);
+	}
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: var(--size-h2-sml);
+}
+@media (min-width: 810px) {
+	h2 {
+		font-size: var(--size-h2-med);
+	}
 }
 
 /*************************
 Spacing
 *************************/
 
-p + p {
-	/* Paragraph following another paragraph */
-	margin-top: 1rem;
-}
-
+p + p,
 h1 + p {
-	/* Paragraph following a heading */
+	/* Paragraph following another paragraph */
+	/* Paragraph following an h1 */
 	margin-top: 1rem;
 }
 
@@ -166,6 +231,23 @@ h2 + p,
 h3 + p {
 	margin-top: 0.25rem;
 }
+
 /**************************************************
 END: Typography
+**************************************************/
+
+/**************************************************
+START: Utilities
+**************************************************/
+
+.card-styling {
+	box-shadow: 0.8px 0.8px 2.2px rgba(0, 0, 0, 0.02), 2px 2px 5.3px rgba(0, 0, 0, 0.028),
+		3.8px 3.8px 10px rgba(0, 0, 0, 0.035), 6.7px 6.7px 17.9px rgba(0, 0, 0, 0.042),
+		12.5px 12.5px 33.4px rgba(0, 0, 0, 0.05), 30px 30px 80px rgba(0, 0, 0, 0.07);
+	transform: scale(1);
+	transition: all 500ms cubic-bezier(0.57, 2.2, 0.26, 0.99);
+}
+
+/**************************************************
+END: Utilities
 **************************************************/

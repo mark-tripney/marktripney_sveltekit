@@ -6,7 +6,7 @@
 	export let link;
 </script>
 
-<div class="card">
+<div class="card card-styling">
 	<nav class="card-nav">
 		<h3 class="card-title">{title}</h3>
 	</nav>
@@ -37,11 +37,6 @@
 		border-radius: 10px;
 		color: #000;
 		background-color: #fff;
-		box-shadow: 0.8px 0.8px 2.2px rgba(0, 0, 0, 0.02), 2px 2px 5.3px rgba(0, 0, 0, 0.028),
-			3.8px 3.8px 10px rgba(0, 0, 0, 0.035), 6.7px 6.7px 17.9px rgba(0, 0, 0, 0.042),
-			12.5px 12.5px 33.4px rgba(0, 0, 0, 0.05), 30px 30px 80px rgba(0, 0, 0, 0.07);
-		transform: scale(1);
-		transition: all 500ms cubic-bezier(0.57, 2.2, 0.26, 0.99);
 	}
 
 	h3 {

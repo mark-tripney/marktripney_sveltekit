@@ -99,7 +99,7 @@
 	.square {
 		height: 3rem;
 		width: 3rem;
-		background-color: #f5df4d;
+		background-color: var(--clr-yellow);
 		margin-left: auto;
 		margin-bottom: 2rem;
 	}
