@@ -31,10 +31,9 @@
 	}
 
 	.card {
-		margin: 0 auto;
+		margin: 0 auto 2rem;
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 2rem;
 		border-radius: 10px;
 		color: #000;
 		background-color: #fff;
@@ -45,8 +44,13 @@
 		transition: all 500ms cubic-bezier(0.57, 2.2, 0.26, 0.99);
 	}
 
+	h3 {
+		font-size: 1.5rem;
+		padding: 1rem 0 0.5rem;
+	}
+
 	.card-text {
-		padding: 0 0.75rem 0;
+		padding: 0 0.75rem 1.5rem;
 	}
 
 	.card-nav {
@@ -85,6 +89,21 @@
 			height: 100%;
 			object-fit: cover;
 		}
+
+		.card-nav,
+		.card-text {
+			padding-left: 0;
+		}
+
+		h3 {
+			padding-top: 1rem;
+		}
+	}
+
+	@media (min-width: 810px) {
+		.card-text p {
+			font-size: 1.1rem;
+		}
 	}
 
 	@media (min-width: 1000px) {
@@ -101,8 +120,13 @@
 			margin: 0;
 		}
 
-		.card-title {
-			margin: 0.5rem 0;
+		h3 {
+			padding: 0.5rem 0 0.25rem;
+		}
+
+		.card-nav,
+		.card-text {
+			padding-left: 0.75rem;
 		}
 	}
 </style>
