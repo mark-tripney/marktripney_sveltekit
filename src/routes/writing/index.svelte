@@ -22,7 +22,7 @@
 		},
 		javascript: {
 			name: 'JavaScript',
-			background: 'rgba(245, 223, 77, 1)',
+			background: 'var(--clr-yellow)',
 			color: '#000'
 		},
 		css: {
@@ -42,10 +42,10 @@
 	</div>
 	<ul>
 		{#each posts as post}
-			<li>
+			<li class="card-styling">
 				<a href={post.path}>
 					<h3 class="main-link">{post.meta.title}</h3>
-					Published {formatDate(post.meta.date)}
+					<aside>Published {formatDate(post.meta.date)}</aside>
 					{#if post.meta.categories.length}
 						<aside>
 							<div class="categories">
@@ -76,18 +76,19 @@
 
 	.circle-group {
 		display: flex;
-		align-items: end;
 		width: 100%;
 		margin-bottom: 2rem;
+		justify-content: flex-end;
+		align-items: flex-end;
 	}
 
 	.circle {
 		height: 1rem;
 		width: 1rem;
 		border-radius: 50%;
-		background-color: #f5df4d;
-		margin-left: auto;
+		background-color: var(--clr-yellow);
 		margin-right: 0.5rem;
+		margin-left: auto;
 	}
 
 	.circle2 {
@@ -105,15 +106,22 @@
 
 	li {
 		position: relative;
-		margin-bottom: 1rem;
 		padding: 0.5rem 1rem;
 		background-color: #fff;
 		border-radius: 8px;
-		box-shadow: 0.8px 0.8px 2.2px rgba(0, 0, 0, 0.02), 2px 2px 5.3px rgba(0, 0, 0, 0.028),
-			3.8px 3.8px 10px rgba(0, 0, 0, 0.035), 6.7px 6.7px 17.9px rgba(0, 0, 0, 0.042),
-			12.5px 12.5px 33.4px rgba(0, 0, 0, 0.05), 30px 30px 80px rgba(0, 0, 0, 0.07);
 	}
 
+	li + li {
+		margin-top: 1.5rem;
+	}
+
+	@media (hover: hover) and (pointer: fine) {
+		li:hover {
+			transform: scale(1.0125);
+		}
+	}
+
+	/* Make whole card clickable */
 	.main-link::before {
 		content: ' ';
 		position: absolute;
@@ -125,11 +133,14 @@
 
 	a {
 		text-decoration: none;
-		font-size: 0.9rem;
 	}
 
 	aside {
-		margin-top: 0.5rem;
+		font-size: 0.9rem;
+	}
+
+	aside:nth-of-type(2) {
+		margin-top: 0.25rem;
 	}
 
 	h3 {
@@ -143,13 +154,13 @@
 		margin-bottom: 0.5rem;
 	}
 
-	.category ~ .category {
-		margin-left: 0.5rem;
-	}
-
 	.category p {
 		font-weight: 600;
 		font-size: 0.8rem;
+	}
+
+	.category ~ .category {
+		margin-left: 0.5rem;
 	}
 
 	.home-link {
