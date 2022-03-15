@@ -7,12 +7,18 @@
 <div class="content-wrapper">
 	<hr class="upper-hr" />
 	<h1 class="post-title">{title}</h1>
-	<p class="published-date">{formatDate(date)}.</p>
-	<slot />
+	<p class="published-date">{formatDate(date)}</p>
+	<div class="slot-container">
+		<slot />
+	</div>
 	<p class="writing-link">&larr; <a href="/writing" class="non-body-link">Writing</a><br /></p>
 </div>
 
 <style>
+	.slot-container {
+		margin-top: 2rem;
+		max-width: 750px;
+	}
 	.upper-hr {
 		background-color: darkseagreen;
 	}
