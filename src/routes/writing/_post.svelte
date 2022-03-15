@@ -1,7 +1,12 @@
 <script>
-	import { formatDate } from '$lib/utility_funcs/date-formatter';
+	// import { formatDate } from '$lib/utility_funcs/date-formatter';
 	export let title;
 	export let date;
+	import { parseISO, format } from 'date-fns';
+	const formatDate = (dateString) => {
+		const date = parseISO(dateString);
+		return format(date, 'LLLL do, yyyy');
+	};
 </script>
 
 <div class="content-wrapper">

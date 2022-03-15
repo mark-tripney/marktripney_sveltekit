@@ -12,8 +12,13 @@
 </script>
 
 <script>
-	import { formatDate } from '$lib/utility_funcs/date-formatter';
+	// import { formatDate } from '$lib/utility_funcs/date-formatter';
+	import { parseISO, format } from 'date-fns';
 	export let posts;
+	const formatDate = (dateString) => {
+		const date = parseISO(dateString);
+		return format(date, 'LLLL do, yyyy');
+	};
 	const categoryStyles = {
 		svelte: {
 			name: 'Svelte',
