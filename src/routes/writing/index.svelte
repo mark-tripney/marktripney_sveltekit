@@ -40,7 +40,7 @@
 		<div class="circle" />
 		<div class="circle2" />
 	</div>
-	<ul>
+	<ul class="article-list">
 		{#each posts as post}
 			<li class="card-styling">
 				<a href={post.path}>
@@ -98,20 +98,20 @@
 		background-color: hotpink;
 	}
 
-	ul {
+	.article-list {
 		list-style: none;
 		padding-left: 0;
 		margin-bottom: 3rem;
 	}
 
-	li {
+	.card-styling {
 		position: relative;
 		padding: 0.5rem 1rem;
 		background-color: #fff;
 		border-radius: 8px;
 	}
 
-	li + li {
+	.card-styling + .card-styling {
 		margin-top: 1.5rem;
 	}
 
