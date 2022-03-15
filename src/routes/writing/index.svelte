@@ -1,5 +1,4 @@
 <script context="module">
-	import { formatDate } from '$lib/utility_funcs/date-formatter';
 	export const load = async ({ fetch }) => {
 		const posts = await fetch('/api/posts.json');
 		const allPosts = await posts.json();
@@ -13,6 +12,7 @@
 </script>
 
 <script>
+	import { formatDate } from '$lib/utility_funcs/date-formatter';
 	export let posts;
 	const categoryStyles = {
 		svelte: {
@@ -71,7 +71,7 @@
 
 <style>
 	.upper-hr {
-		background-color: skyblue;
+		background-color: deepskyblue;
 	}
 
 	.circle-group {
