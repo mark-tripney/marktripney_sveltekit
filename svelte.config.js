@@ -1,6 +1,5 @@
-// TODO: Consider pre-render as static HTML...
-// import adapter from '@sveltejs/adapter-static';
 import adapter from '@sveltejs/adapter-auto';
+// import vercel from '@sveltejs/adapter-vercel';
 import sveltePreprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
 

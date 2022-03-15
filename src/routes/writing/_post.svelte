@@ -1,18 +1,13 @@
 <script>
-	// import { formatDate } from '$lib/utility_funcs/date-formatter';
+	import { formatDate } from '$lib/utility_funcs/date-formatter';
 	export let title;
 	export let date;
-	// import { parseISO, format } from 'date-fns';
-	// const formatDate = (dateString) => {
-	// 	const date = parseISO(dateString);
-	// 	return format(date, 'LLLL do, yyyy');
-	// };
 </script>
 
 <div class="content-wrapper">
 	<hr class="upper-hr" />
 	<h1 class="post-title">{title}</h1>
-	<p class="published-date">{date}</p>
+	<p class="published-date">{formatDate(date)}</p>
 	<div class="slot-container">
 		<slot />
 	</div>

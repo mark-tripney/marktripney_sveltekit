@@ -12,13 +12,8 @@
 </script>
 
 <script>
-	// import { formatDate } from '$lib/utility_funcs/date-formatter';
-	// import { parseISO, format } from 'date-fns';
+	import { formatDate } from '$lib/utility_funcs/date-formatter';
 	export let posts;
-	// const formatDate = (dateString) => {
-	// 	const date = parseISO(dateString);
-	// 	return format(date, 'LLLL do, yyyy');
-	// };
 	const categoryStyles = {
 		svelte: {
 			name: 'Svelte',
@@ -50,8 +45,7 @@
 			<li class="card-styling">
 				<a href={post.path}>
 					<h3 class="main-link">{post.meta.title}</h3>
-					<!-- <aside>Published {formatDate(post.meta.date)}</aside> -->
-					<aside>Published {post.meta.date}</aside>
+					<aside>Published {formatDate(post.meta.date)}</aside>
 					{#if post.meta.categories.length}
 						<aside>
 							<div class="categories">
