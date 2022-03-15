@@ -24,8 +24,5 @@
     "svelte": "^3.44.0",
     "svelte-preprocess": "^4.10.4"
   },
-  "type": "module",
-  "dependencies": {
-    "date-fns": "^2.28.0"
-  }
+  "type": "module"
 }
