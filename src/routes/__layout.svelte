@@ -14,6 +14,7 @@
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import '$lib/styles/global.css';
+	import '$lib/styles/prism.css';
 	import { fade } from 'svelte/transition';
 	export let currentRoute;
 </script>

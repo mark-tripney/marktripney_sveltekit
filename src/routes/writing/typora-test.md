@@ -11,4 +11,4 @@ This is a test post using Typora. Here's a look at a code block... How is it?
 const name = "Mark"
 ```
 
-Pretty **good!**
+Pretty **good!** However, what use would Typora be if it wasn't a great tool to work in? That, after all, is the `secret` sauce — this has to be an enjoyable experience, or it is nothing at all.
