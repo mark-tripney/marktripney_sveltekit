@@ -1,6 +1,6 @@
 ---
 title: Props Basics
-date: '2022-03-14'
+date: '2022-03-17'
 categories:
 	- 'svelte'
 ---
