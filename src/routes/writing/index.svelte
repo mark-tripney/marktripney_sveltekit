@@ -140,7 +140,7 @@
 	}
 
 	aside:nth-of-type(2) {
-		margin-top: 0.25rem;
+		margin-top: 0.5rem;
 	}
 
 	h3 {

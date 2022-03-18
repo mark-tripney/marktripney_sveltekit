@@ -18,7 +18,7 @@ START: Variables
 	--size-h1-sml: 3rem;
 	--size-h1-med: 3.5rem;
 	--size-h1-lrg: 5rem;
-	--size-h2-sml: 2.5rem;
+	--size-h2-sml: 2rem;
 	--size-h2-med: 3rem;
 
 	--weight-link: 600;
@@ -80,6 +80,22 @@ Links outside body text
 	.non-body-link:hover {
 		border-bottom: 3px solid var(--clr-link);
 	}
+}
+
+/*************************
+Links inside body text
+*************************/
+
+p a {
+	color: var(--clr-link);
+	text-decoration: none;
+	font-weight: var(--weight-link);
+	border-bottom: 2px solid var(--clr-link);
+}
+
+p a:hover {
+	color: dodgerblue;
+	border-bottom: 2px solid dodgerblue;
 }
 
 /*************************

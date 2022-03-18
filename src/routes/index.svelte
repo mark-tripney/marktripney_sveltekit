@@ -80,6 +80,9 @@
 </section>
 
 <style>
+	section {
+		margin-top: 3rem;
+	}
 	#intro {
 		padding: 0 0 3.5rem;
 	}
@@ -152,7 +155,7 @@
 	.diagonal-div {
 		background: linear-gradient(0deg, rgba(245, 223, 77, 1) 0%, rgba(252, 252, 252, 1) 100%);
 		transform: skewY(-2deg);
-		padding: 0 0 4rem;
+		padding: 0 0 7rem;
 	}
 
 	.diagonal-wrapper {
@@ -161,6 +164,7 @@
 
 	h2 {
 		margin-bottom: 1rem;
+		font-size: 3rem;
 	}
 
 	.work-intro {
