@@ -9,15 +9,19 @@
 		<h1 class="main-head">Hi, I'm Mark.</h1>
 		<h2 class="main-sub-head">I'm a front-end developer, designer, and writer.</h2>
 		<div class="square" />
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam autem beatae est iure
-			laborum magni nobis reiciendis temporibus. Aliquam at ea excepturi hic illo laudantium
-			necessitatibus perferendis possimus soluta?
-		</p>
-		<p>
-			<span class="wave">👋</span> Want to get in touch? Great! There's a contact form
-			<a href="#contact">here</a>. I look forward to hearing from you!
-		</p>
+		<div class="intro-text">
+			<p>
+				<span class="wave">👋</span> I'm a self-taught developer, working primarily in JavaScript, Svelte,
+				and SvelteKit, but with a good working knowledge of React, too. (I've also got a fair understanding
+				of Python, if that's something you need!) I love writing CSS, and have a real passion for developing
+				well-crafted and accessible websites and apps. I enjoy writing about the tools and technologies
+				I use — I'm proud to learn in public.
+			</p>
+			<p>
+				Want to get in touch? Great! There's a contact form
+				<a href="#contact">here</a>. I look forward to hearing from you!
+			</p>
+		</div>
 	</div>
 </section>
 
@@ -26,8 +30,8 @@
 		<div class="content-wrapper diagonal-wrapper">
 			<h2>Work</h2>
 			<p class="work-intro">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aut corporis dignissimos
-				eligendi inventore magnam molestiae natus quas quidem reiciendis?
+				These are some of my most recent projects. Click on a preview image to visit the site in a
+				new browser tab.
 			</p>
 			<div class="grid-container">
 				<!-- devsearch -->
@@ -56,7 +60,7 @@
 					src="/images/todo-react-crop.png"
 					alt="Screenshot from 'todos' app."
 					title="todos"
-					text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem commodi odit perferendis error obcaecati officia molestias ex illo neque?"
+					text="What portfolio would be complete without a Todo app? (No portfolio is complete without a Todo app.) This big, bold example is built in React and has some nice little visual flourishes."
 					link="https://react-todos-marktripney.vercel.app/"
 				/>
 				<!-- Pricing Cards with Toggle -->
@@ -64,7 +68,7 @@
 					src="/images/pricing-cards-with-toggle-crop.png"
 					alt="Screenshot from 'Pricing Cards' app."
 					title="Pricing Cards with Toggle"
-					text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorem commodi odit perferendis error obcaecati officia molestias ex illo neque?"
+					text="A Svelte-based site exhibiting a classic design pattern — pricing cards, with a monthly/annual toggle, and a prominent, 'most popular'-style card front-and-center."
 					link="https://pricing-with-toggle-beige.vercel.app"
 				/>
 			</div>
@@ -83,6 +87,7 @@
 	section {
 		margin-top: 3rem;
 	}
+
 	#intro {
 		padding: 0 0 3.5rem;
 	}
@@ -97,6 +102,10 @@
 
 	.upper-hr {
 		background-color: coral;
+	}
+
+	p {
+		max-width: 750px;
 	}
 
 	.square {
