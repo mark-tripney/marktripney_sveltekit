@@ -29,7 +29,6 @@
 	}
 
 	.published-date {
-		/* margin: 0; */
 		color: darkslategrey;
 		font-size: 0.9rem;
 	}
