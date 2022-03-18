@@ -1,5 +1,5 @@
 export const get = async () => {
-	const allPostFiles = import.meta.glob('../writing/*.md');
+	const allPostFiles = import.meta.glob('../writing/posts/*.md');
 	const iterablePostFiles = Object.entries(allPostFiles);
 
 	const allPosts = await Promise.all(
