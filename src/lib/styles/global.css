@@ -36,7 +36,7 @@ body {
 }
 
 .dotted-bg {
-	background-image: radial-gradient(rgba(0, 0, 0, 0.2) 1px, transparent 1px);
+	background-image: radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
 	background-size: 40px 40px;
 }
 
@@ -90,12 +90,12 @@ p a {
 	color: var(--clr-link);
 	text-decoration: none;
 	font-weight: var(--weight-link);
-	border-bottom: 2px solid var(--clr-link);
+	border-bottom: 3px solid var(--clr-link);
 }
 
 p a:hover {
 	color: dodgerblue;
-	border-bottom: 2px solid dodgerblue;
+	border-bottom: 3px solid dodgerblue;
 }
 
 /*************************
@@ -122,6 +122,7 @@ Sizing, line-height
 
 p {
 	font-size: var(--size-body-sml);
+	line-height: 1.7;
 }
 
 h1 {
