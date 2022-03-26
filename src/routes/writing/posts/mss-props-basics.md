@@ -17,7 +17,7 @@ Components which can't receive data may still be useful (components don't _need_
 
 ```javascript
 <script>
-  import Button from './Button.svelte';
+  import Button from "./Button.svelte";
 </script>
 
 <Button />
@@ -37,11 +37,11 @@ So, let's pass a prop to our button component, then we'll break down what's happ
 
 ```javascript
 <script>
-	export let buttonText;
+  export let buttonText;
 </script>
 
 <button>
-	{buttonText}
+  {buttonText}
 </button>
 ```
 
@@ -49,7 +49,7 @@ So, let's pass a prop to our button component, then we'll break down what's happ
 
 ```javascript
 <script>
-  import Button from './Button.svelte';
+  import Button from "./Button.svelte";
 </script>
 
 <Button buttonText = "Open" />
@@ -69,15 +69,15 @@ Next, note what's happening in `App.svelte`. Where we had previously declared a 
 
 ## Default values
 
-We can easily pass a default value to our prop, ensuring that there's no error if an expected prop is missing for some reason. Let's open `Button.svelte` and assign a default value of "Closed" to `buttonText`...
+We can easily pass a default value to our prop, ensuring that there's no error if an expected prop is missing for some reason. Let's open `Button.svelte` and assign a default value of "Close" to `buttonText`...
 
 ```javascript
 <script>
-	export let buttonText = "Closed";
+  export let buttonText = "Close";
 </script>
 
 <button>
-	{buttonText}
+  {buttonText}
 </button>
 ```
 
@@ -85,13 +85,13 @@ We can easily pass a default value to our prop, ensuring that there's no error i
 
 ```javascript
 <script>
-  import Button from './Button.svelte';
+  import Button from "./Button.svelte";
 </script>
 
 <Button />
 ```
 
-The button's text now reads, "Closed". Not passing a prop value at the point of invoking the component has caused its prop to revert to default.
+The button's text now reads, "Close". Not passing a prop value at the point of invoking the component has caused its prop to revert to default.
 
 ## Spreading props
 
@@ -99,12 +99,12 @@ What if we wanted to pass more than one prop to our button component? We could d
 
 ```javascript
 <script>
-	export let buttonText = "Closed";
-	export let buttonBgColour;
+  export let buttonText = "Close";
+  export let buttonBgColour;
 </script>
 
 <button style="background-color: {buttonBgColour};">
-	{buttonText}
+  {buttonText}
 </button>
 ```
 
@@ -112,7 +112,7 @@ What if we wanted to pass more than one prop to our button component? We could d
 
 ```javascript
 <script>
-  import Button from './Button.svelte';
+  import Button from "./Button.svelte";
 </script>
 
 <Button buttonBgColour="skyblue" />
@@ -124,27 +124,27 @@ However, where we have multiple props, it can be useful to package them in an ob
 
 ```javascript
 <script>
-  import Button from './Button.svelte';
+  import Button from "./Button.svelte";
 
-	const buttonData = {
-		buttonText: 'Closed',
-		buttonBgColour: 'skyblue',
-	}
+  const buttonData = {
+    buttonText: "Close",
+    buttonBgColour: "skyblue",
+  }
 </script>
 
 <Button {...buttonData} />
 ```
 
-Where a key's value is `undefined`, the default value (if it exists) will be used. So, the following would also produce a sky blue 'Closed' button:
+Where a key's value is `undefined`, the default value (if it exists) will be used. So, the following would also produce a sky blue 'Close' button:
 
 ```javascript
 <script>
-  import Button from './Button.svelte';
+  import Button from "./Button.svelte";
 
-	const buttonData = {
-		buttonText: undefined,
-		buttonBgColour: 'skyblue',
-	}
+  const buttonData = {
+    buttonText: undefined,
+    buttonBgColour: "skyblue",
+  }
 </script>
 
 <Button {...buttonData} />
