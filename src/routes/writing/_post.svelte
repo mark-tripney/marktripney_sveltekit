@@ -19,6 +19,7 @@
 		margin-top: 2rem;
 		max-width: 750px;
 	}
+
 	.upper-hr {
 		background-color: darkseagreen;
 	}
