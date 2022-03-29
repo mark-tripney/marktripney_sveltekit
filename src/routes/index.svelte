@@ -11,11 +11,12 @@
 		<div class="square" />
 		<div class="intro-text">
 			<p>
-				<span class="wave">👋</span> I'm a self-taught developer, working primarily in JavaScript, Svelte,
-				and SvelteKit, but with a good working knowledge of React, too. (I've also got a fair understanding
-				of Python, if that's something you need!) I love writing CSS, and have a real passion for developing
-				well-crafted and accessible websites and apps. I enjoy writing about the tools and technologies
-				I use — I'm proud to learn in public.
+				<span class="wave">👋</span> I'm a self-taught developer, working primarily in JavaScript,
+				Svelte, and SvelteKit, but with a good working knowledge of React, too. (I've also got a
+				fair understanding of Python, if that's something you need!) I love writing CSS, and have a
+				real passion for developing well-crafted and accessible websites and apps. I enjoy writing
+				about the tools and technologies I use — you can view my recent written work
+				<a href="/writing">here</a>.
 			</p>
 			<p>
 				Want to get in touch? Great! There's a contact form
