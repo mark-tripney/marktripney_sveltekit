@@ -68,8 +68,16 @@
 					src="/images/pricing-cards-with-toggle-crop.png"
 					alt="Screenshot from 'Pricing Cards' app."
 					title="Pricing Cards with Toggle"
-					text="A Svelte-based site exhibiting a classic design pattern — pricing cards, with a monthly/annual toggle, and a prominent, 'most popular'-style card front-and-center."
+					text="A Svelte-based site exhibiting a classic design pattern — pricing cards, with a monthly/annual toggle, and a prominent 'most popular choice' card front-and-center."
 					link="https://pricing-with-toggle-beige.vercel.app"
+				/>
+				<!-- Ratings Component -->
+				<Card
+					src="/images/ratings-component-crop.png"
+					alt="Screenshot from 'Ratings Component' app."
+					title="Ratings Component"
+					text="A Svelte-built example of a well-established website component, this gives the user a chance to rate their experience and see a swapped-out 'Thank you' card on submission. Simple concept, but there are some neat Svelte tricks in here!"
+					link="https://ratings-component.vercel.app"
 				/>
 			</div>
 		</div>
